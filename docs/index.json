@@ -1,0 +1,10 @@
+{
+  "projects": [
+    {
+      "slug": "portfolio-engine",
+      "title": "Story-Driven Portfolio Engine",
+      "tagline": "Interactive documentation powered by GitHub content.",
+      "status": "In Progress"
+    }
+  ]
+}
