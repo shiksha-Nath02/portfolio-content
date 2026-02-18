@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "frontend",
+      "label": "Vite + React",
+      "type": "frontend",
+      "description": "Handles UI rendering and routing."
+    },
+    {
+      "id": "github",
+      "label": "GitHub Raw Content",
+      "type": "data-source",
+      "description": "Provides Markdown and JSON content."
+    }
+  ],
+  "edges": [
+    {
+      "from": "frontend",
+      "to": "github",
+      "label": "Fetch Content"
+    }
+  ]
+}

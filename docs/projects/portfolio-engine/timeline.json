@@ -1,0 +1,16 @@
+{
+  "phases": [
+    {
+      "title": "Phase 1 - Landing Page",
+      "description": "Built modern hero section and branding."
+    },
+    {
+      "title": "Phase 2 - Routing",
+      "description": "Implemented multi-project dynamic routing."
+    },
+    {
+      "title": "Phase 3 - Content Engine",
+      "description": "Connected GitHub raw content to frontend."
+    }
+  ]
+}

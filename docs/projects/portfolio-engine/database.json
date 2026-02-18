@@ -1,0 +1,13 @@
+{
+  "entities": [
+    {
+      "name": "Project",
+      "fields": [
+        "slug",
+        "title",
+        "tagline",
+        "status"
+      ]
+    }
+  ]
+}

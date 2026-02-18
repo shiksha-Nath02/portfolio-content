@@ -1,0 +1,14 @@
+{
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/docs/index.json",
+      "description": "Fetch list of all projects"
+    },
+    {
+      "method": "GET",
+      "path": "/docs/projects/:slug/overview.md",
+      "description": "Fetch project overview"
+    }
+  ]
+}
