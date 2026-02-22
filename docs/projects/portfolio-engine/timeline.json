@@ -1,16 +1,24 @@
 {
+  "meta": {
+    "version": 1,
+    "title": "Project Evolution"
+  },
   "phases": [
     {
-      "title": "Phase 1 - Landing Page",
-      "description": "Built modern hero section and branding."
+      "id": "phase-1",
+      "title": "Landing Page",
+      "description": "Built modern hero section and branding.",
+      "date": "2026-01",
+      "status": "completed",
+      "tags": ["UI", "Branding"]
     },
     {
-      "title": "Phase 2 - Routing",
-      "description": "Implemented multi-project dynamic routing."
-    },
-    {
-      "title": "Phase 3 - Content Engine",
-      "description": "Connected GitHub raw content to frontend."
+      "id": "phase-2",
+      "title": "Routing Engine",
+      "description": "Implemented multi-project dynamic routing.",
+      "date": "2026-02",
+      "status": "completed",
+      "tags": ["Routing", "React Router"]
     }
   ]
 }
