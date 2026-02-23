@@ -2,22 +2,51 @@
   "nodes": [
     {
       "id": "frontend",
-      "label": "Vite + React",
-      "type": "frontend",
-      "description": "Handles UI rendering and routing."
+      "label": "React SPA",
+      "category": "Client",
+      "description": "Single-page application built with React and Vite. Handles routing, authentication state, and API communication.",
+      "stack": ["React", "Vite", "Axios", "React Router"]
     },
     {
-      "id": "github",
-      "label": "GitHub Raw Content",
-      "type": "data-source",
-      "description": "Provides Markdown and JSON content."
+      "id": "backend",
+      "label": "Express API",
+      "category": "Server",
+      "description": "REST API built with Express. Handles authentication, post management, and business logic.",
+      "stack": ["Node.js", "Express", "JWT"]
+    },
+    {
+      "id": "prisma",
+      "label": "Prisma ORM",
+      "category": "Data Access",
+      "description": "ORM layer connecting Express API to PostgreSQL.",
+      "stack": ["Prisma"]
+    },
+    {
+      "id": "database",
+      "label": "PostgreSQL",
+      "category": "Database",
+      "description": "Relational database storing Users, Posts, and Comments.",
+      "stack": ["PostgreSQL"]
     }
   ],
   "edges": [
     {
+      "id": "fe-be",
       "from": "frontend",
-      "to": "github",
-      "label": "Fetch Content"
+      "to": "backend",
+      "label": "HTTP REST + JWT"
+    },
+    {
+      "id": "be-prisma",
+      "from": "backend",
+      "to": "prisma",
+      "label": "ORM Calls"
+    },
+    {
+      "id": "prisma-db",
+      "from": "prisma",
+      "to": "database",
+      "label": "SQL Queries"
     }
   ]
 }
